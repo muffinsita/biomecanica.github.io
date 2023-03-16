@@ -583,6 +583,9 @@ footer {
         margin: 2em 25%;
     }
 
+    #filosofia h2{
+        line-height: 1;
+    }
 
     #filosofia img:first-child{ /* para seleccionar el logo central */
         max-width: 20%;
@@ -623,4 +626,10 @@ footer {
     #comentario .firma{ 
         font-size: 17px;
     }
+    
+    #redes nav a img {
+        display: block;
+        padding-left: 32%;
+    }
+    
 }
