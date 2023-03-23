@@ -1,0 +1,634 @@
+@import url('https://fonts.cdnfonts.com/css/sansburg');
+
+/*................................................................... */
+/*** Reseteo propiedades ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Sansburg', sans-serif;
+}
+
+/*................................................................... */
+/*** BODY ***/
+body{
+    text-align: center;
+    color: #194341;
+}
+
+.rayita{ 
+    margin: -3em auto 0;
+    display: block;
+}
+
+
+section h2{
+    font-size: 60px;
+    margin: 1em;
+}
+
+section h3{
+    font-size: 25px;
+}
+
+/*................................................................... */
+/*** HEADER ***/
+header {
+    background: white;
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    top: 0;
+}
+
+header #logoinicio{
+    display: block;
+    width: 60%;
+    justify-content: center;
+}
+
+header article{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header section{
+    width: 100%;
+}
+
+header section input{
+    margin-top: 100px;
+    float: left;
+}
+
+header section img{
+    vertical-align: bottom;
+}
+
+header section button{
+    margin-top: 100px;
+    float: right;
+}
+
+header nav ul {
+    border-style: solid;
+    border-width: 1px 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 15px;
+    position: relative;
+    color: white;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li:hover,
+nav ul li a.active{
+    background: #397f77;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#2a726f;
+    font-size: 18px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0;
+}
+
+/* items del menu desplegable */
+
+nav ul ul li {
+    float: none;
+    width: 150px;
+}
+
+/* enlaces de los items del menu desplegable */
+
+nav ul ul a {
+    line-height: 120%;
+    padding: 10px 10px;
+    color: white;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+nav ul li:hover>ul {
+    display: block;
+    cursor: pointer;
+    background: #397f77
+}
+
+nav ul li:hover{
+    transition: all .5s;
+    background-color: #b4ddd9;
+}
+
+/*................................................................... */
+/*** SECTION: PRESENTACION ***/
+#fotoinicio{
+    height: 25em;
+    width: 100%;
+    background: url('./Images/352540af0345423b8d447b3b337f557a.webp') center;
+}
+
+#presentacion{
+    padding: 3em 0;
+    font-size: 25px;
+}
+
+#presentacion h1{
+    font-size: 60px;
+    margin: 0.5em;
+}
+
+#presentacion p{
+    font-size: 25px;
+    padding: 1em;
+}
+
+#presentacion small {
+    display: block;
+    margin: 0.5em;
+    padding-bottom: 1em; 
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+#presentacion nav a {
+    background-color: #397f77;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#presentacion nav a:hover{
+    transition: all .5s;
+    background-color: #b4ddd9;
+}
+
+/*................................................................... */
+/*** SECTION: EQUIPO ***/
+#equipo{
+    max-width: 100%;
+}
+
+#equipo p{
+    line-height: 1.5em;
+    padding-bottom: 2em;
+    font-size: 25px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#equipo figure{
+    width:20%;
+    max-width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #b4ddd9;
+    max-height: 50%;
+}
+
+#equipo figure img{
+    vertical-align: middle;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#equipo figure figcaption{
+    color: #015450;
+    min-height: 17em;
+    padding: 1.5em 2em;
+    width: 100%;
+    text-align: center;
+}
+
+#equipo figure h3{
+    padding-top: 0.8em;
+    font-weight: bold;
+}
+
+#equipo figure figcaption p{
+    text-align: center;
+    line-height: 1,5em;
+    font-size: 20px;
+    padding-top: 1em;
+}
+
+#equipo #ariel{
+    margin: 0 2em;
+}
+
+/*................................................................... */
+/*** SECTION: FILOSOFIA ***/
+#filosofia{
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5em;
+}
+
+#logo{
+    margin: 4em;
+    width: 15%;
+    height: 25%;
+}
+
+#filosofia h2{
+    padding-bottom: 0.5em;
+}
+
+#filosofia p{
+    margin-bottom: 2em;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 1em 1em;
+    text-align: justify;
+}
+
+/*................................................................... */
+/*** SECTION: COMENTARIO ***/
+#comentario{
+    color: #78a29f;
+    height: 715px;
+    width:70%;
+    margin-left: 15%;
+}
+
+#comentario article {
+    padding: 3em 2em;
+    float: left;
+    background-color: #f7f7f7;
+    text-align: justify;
+    word-spacing: 0.3em;
+    line-height: 1.5em;
+    font-size: 20px;
+    display: inline;
+}
+
+#comentario article p{
+    text-indent: 3em;
+    display: inline-block;
+    padding-right: 2em;
+    width: 45%;
+    float: none;
+    padding-top: 2%;
+}
+
+#comentario .firma{   
+    color: #2a726f;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding-top: 2%;
+    font-variant: small-caps;
+}
+
+#comentario img{
+    width:45%;
+    float: right;
+}
+
+/*................................................................... */
+/*** SECTION: REDES ***/
+#redes{
+    width: 100%;
+    padding: 2em 0;
+    background: #b4ddd9;
+}
+
+#redes p{
+    font-size: 20px;
+}
+
+#redes nav{
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+#redes nav a{
+    width: 30%;
+    display: inline-block;
+    text-decoration: none;
+    color: #194341;
+}
+
+#redes nav a img{
+    display: block;
+    padding-left: 5.5em;
+}
+
+#redes nav a:hover,
+#redes nav a.active{
+    transition: all .5s;
+    color: #397f77;
+}
+
+/*................................................................... */
+/*** SECTION: NEWSLETTER ***/
+#newsletter{
+    padding: 2em;
+}
+
+#newsletter h2{
+    padding: -2em;
+}
+
+#newsletter img #rayita{
+    padding-top: -5em;
+}
+
+#newsletter img{
+    display: block;
+    margin: 0 auto;
+}
+
+#newsletter input#campoemail{
+    width: 300px;
+}
+
+/*................................................................... */
+/*** FOOTER ***/
+footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: #015450;
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check:checked ~ ul{
+    display: none;
+
+}
+
+
+/* ---------------------------------------------------------- */
+                    /*** MEDIA QUERIES ***/
+/* ---------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- */
+/* Pantalla PC */
+/* ---------------------------------------------------------- */
+
+@media  (max-width: 1366px) {}
+/* se oculta el icono bars */
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display: none;
+}
+
+/* ---------------------------------------------------------- */
+/* Pantalla tablet */
+/* ---------------------------------------------------------- */
+
+@media (max-width:1023px) {
+/* se reduce padding left del logo: no se aplica
+   se reduce el font size de los elementos del menu */
+
+   header section input{
+        margin-top: 90px;
+        margin-left: 10px;
+    }
+
+    header section button{
+        margin-top: 90px;
+        margin-right: 10px;
+    } 
+
+    #filosofia img:first-child{ /* para seleccionar el logo central */
+        max-width: 30%;
+    }
+
+
+   nav ul li a {
+        font-size: 16px;
+    }
+
+    .checkbtn{
+        display: none;
+    }
+
+    #equipo{
+        max-width: 100%;
+    }
+    
+    #equipo #ariel{ /* para corregir el margen que lo separaba cuando era inline block */
+        margin: 2em 20%;
+    }
+
+    #equipo figure{
+        width: 60%;
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 2em 20%;
+    }
+
+    #comentario{
+        width: 70%;
+        margin-left: 15%;
+    }
+    #comentario article{
+        width: 100%;
+        display: inline;
+    }
+
+    #comentario article p{
+        width: 100%;
+        max-width: 100%;
+        float: left;
+    }
+
+    #comentario img{
+       float: left;
+       margin-left: 25%;
+       padding-top: 5%;
+    }
+    
+}
+
+/* ---------------------------------------------------------- */
+/* Pantalla Smarthphone */
+/* ---------------------------------------------------------- */
+
+@media (max-width:812px) {
+
+    header section input{
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    
+    header section button{
+        margin-top: 80px;
+        margin-right: 10px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    
+    header nav {
+        width: fit-content;
+        position: absolute;
+        background-color: white;
+    }
+
+    .checkbtn {
+        display: block;
+        left: 70%;
+        font-size: 15px;
+        position: absolute;
+        margin-right: 10%;
+        z-index: 999;
+    }
+
+    .checkbtn:hover{
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        display: block;
+        color: black;
+    }
+
+    header nav ul {
+        font-variant: small-caps;
+        letter-spacing: 2px;
+        display: none;
+        border-right: 1px solid black;
+    }
+
+    header nav ul li {
+        position: relative;
+        display: block;
+        padding: 15px;
+        line-height: 3px;
+        border-bottom: 1px solid black;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+        display: block;
+        line-height: 12px;
+        color: black;
+        text-align: center;
+        padding: 5px 5px;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active{
+        transition: all .5s;
+        cursor: pointer;
+        color: black;
+    }
+
+    header nav ul li ul {
+        background-color: #015450;
+        width: fit-content;
+        position: relative;
+    }
+
+    header nav ul li ul li a:hover,
+    header nav ul li ul li a.active{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    #equipo{
+        max-width: 100%;
+    }
+    
+    #equipo #ariel{ /* para corregir el margen que lo separaba cuando era inline block */
+        margin: 2em 25%;
+    }
+
+    #equipo figure{
+        width: 60%;
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 2em 25%;
+    }
+
+    #filosofia h2{
+        line-height: 1;
+    }
+
+    #filosofia img:first-child{ /* para seleccionar el logo central */
+        max-width: 20%;
+        margin-left: 15px;
+    }
+
+    #filosofia p{
+        margin-left: 25px;
+    }
+
+
+    #comentario{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #comentario article{
+        width: 100%;
+        display: inline;
+    }
+
+    #comentario article p{
+        width: 100%;
+        max-width: 100%;
+        float: left;
+    }
+
+    #comentario img{
+       float: left;
+       margin-left: 25%;
+       padding-top: 5%;
+    }
+
+    #comentario article{
+        font-size: 17px;
+    }
+
+    #comentario .firma{ 
+        font-size: 17px;
+    }
+
+    #redes nav a img {
+        display: block;
+        padding-left: 32%;
+    }
+}
